@@ -27,27 +27,27 @@
                     <span>Currency Exchange</span>
                 </div>
                 <span>Enter the amount</span><br>
-                <input type="text">
+                <input type="text" class="amount" value="100">
                 <div class="center">
-                    <div class="sel">
+                    <div class="sel" id="from">
                         <img class="to" src="https://flagsapi.com/US/flat/64.png">
                         <select name="From">
-                            <option value="USD">USD</option>
                         </select>
                     </div>
                     <img class="image" src="exchange.png" alt="excahnge">
-                    <div class="sel">
+                    <div class="sel" id="to">
                         <img class="to" src="https://flagsapi.com/IN/flat/64.png">
                         <select name="To">
-                            <option value="INR">INR</option>
                         </select>
                     </div>
                 </div>
+                <div id="amt"></div>
                 <button id="btn">get exchange</button>
                 <p>made by:- dikshant jatrana</p>
             </div>
         </div>
     </div>
+    <script src="code.js"></script>
     <script src="app.js"></script>
 </body>
 </html> 
