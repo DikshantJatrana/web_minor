@@ -1,0 +1,124 @@
+@font-face {
+    font-family:myfont;
+    src: url(SignikaNegative-Medium.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'myfont';
+}
+html,body {
+    height:100%;
+    width:100%;
+    background: hsla(59, 86%, 68%, 1);
+    background: linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F4F269", endColorstr="#5CB270", GradientType=1 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main{
+    width: 50%;
+    height: 80%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 4rem black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+#heading{
+    height: 8%;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#heading img{
+    height: 90%;
+    width: calc(height);
+}
+#heading span{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+#add{
+    height: 10%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#input{
+    height: 100%;
+    width: 75%;
+    outline: none;
+    border: 0.15rem solid #47C464;
+    border-radius: 0.5rem;
+    padding-left: 5%;
+}
+#btn{
+    height: 100%;
+    width: 22%;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: #47C464;
+    cursor: pointer;
+}
+#dolist{
+    height: 70%;
+    width: 80%;
+    border:0.15rem solid #47C464;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list{
+    height: 10%;
+    width: 90%;
+    background-color: white;
+    color: #2f2f2f;
+    border:0.12rem solid #2f2f2f;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 2%;
+    cursor: pointer;
+    position: relative;
+}
+
+.check{
+    height: 60%;
+    width: 5%;
+    border-radius: 50%;
+    border: 0.1rem solid #2f2f2f;
+}
+.list p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-left: 3%;
+}
+.list img{
+    height: 35%;
+    width: calc(height);
+    position: absolute;
+    right: 10%;
+}
+.effect{
+    text-decoration: line-through;
+}
+.img{
+    background-image: url(yes.png);
+    background-size: cover;
+    background-position: center;
+}
