@@ -1,0 +1,101 @@
+@font-face {
+    font-family: myfont;
+    src: url(SignikaNegative-Medium.ttf);
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'myfont';
+}
+html,body {
+height:100%;
+width:100%;
+background-color: #2f2f2f;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card{
+    width: 35%;
+    height: 75%;
+    background: hsla(152, 100%, 50%, 1);
+    background: linear-gradient(135deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00ff87", endColorstr="#60efff", GradientType=1 );
+    border-radius:1.5rem;
+    box-shadow: 0.1rem 0.1rem 0.8rem white;
+    padding: 1rem;
+    text-align: center;
+}
+.search{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.search input{
+    height: 95%;
+    width:75%;
+    border: none;
+    background-color: #ebfffc;
+    outline: none;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+.search button{
+    height: 95%;
+    aspect-ratio: 1;
+    background-color: #ebfffc;
+    color: #555;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search button img{
+    height: 30%;
+    width: 30%;
+}
+.weather{
+    width: 100%;
+    height: 50%;
+}
+.weather image{
+    height: 48%;
+    aspect-ratio: 1;
+}
+.class{
+    width: 100%;
+    height: 24%;
+}
+.city{
+    width: 100%;
+    height: 24%;
+}
+.details{
+    margin-top: 1.5%;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.col{
+    height:90%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.col img{
+    height: 60%;
+    aspect-ratio: 1.2;
+}
