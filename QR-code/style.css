@@ -1,0 +1,96 @@
+@font-face {
+    font-family: myfont;
+    src: url(SignikaNegative-Medium.ttf);
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'myfont';
+}
+html,body {
+height:100%;
+width:100%;
+background-color: #222;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #0B009F;
+}
+.main{
+    width: 28rem;
+    height: 15rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0.15rem 0.15rem 1.5rem whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@keyframes extend {
+    from{height: 0%;}
+    to{height: 45%;}
+}
+.expand{
+    height: 30rem;
+}
+.head{
+    width: 100%;
+    height:7.5rem;
+    background-color: #00F7FF;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    padding-left:2rem ;
+    padding-top:1.5rem;
+}
+.head p{
+    font-size: 1.57rem;
+}
+.main input{
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    width:24rem;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    background-color: whitesmoke;
+    font-size: 1.23rem;
+    padding-left: 1.3rem;
+}
+.btn{
+    width: 18rem;
+    height: 2.3rem;
+    outline: none;
+    border: none;
+    background-color: #0B009F;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.foot{
+    width: 100%;
+    height:7.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qr{
+    height: 45%;
+    aspect-ratio: 1;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    border: 0.25rem solid #0B009F;
+    animation-name: extend;
+    animation-duration: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qr img{
+    height: 95%;
+    aspect-ratio: 1;
+}
