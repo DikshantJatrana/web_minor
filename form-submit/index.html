@@ -8,7 +8,45 @@
     <title>Form Submition</title>
 </head>
 <body>
-    
+    <div id="card1" class="card">
+        <div class="name box">
+            <h3 class="details">Name</h3>
+            <input type="text">
+        </div>
+        <div class="email box">
+            <h3 class="details">E-Mail</h3>
+            <input type="text">
+        </div>
+        <div class="age box">
+            <h3 class="details">D.O.B</h3>
+            <input type="date">
+        </div>
+        <div class="password box">
+            <h3 class="details">Password</h3>
+            <input type="password">
+            <img class="view" src="eye.png" alt="view">
+        </div>
+        <div class="phone box">
+            <h3 class="details">Phone-Number</h3>
+            <input type="text">
+        </div>
+        <button id="next" class="btn">Next</button>
+    </div>
+    <div id="card2" class="card hidden">
+        <button class="btn success">SUCCESS</button>
+        <button class="btn failed">FAILED</button>
+        <button class="btn invalid">INVALID</button>
+        <button class="btn">SUBMIT</button>
+    </div>
+    <div id="card3" class="card pop hidden">
+        <img class="yes" src="yes.png" alt="check">
+        <h2>THANK  YOU</h2>
+        <div class="para">
+            <p>your details have be successfully </p>
+            <p>submitted. Thanks!</p>
+        </div>
+        <button class="btn success">OK</button>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

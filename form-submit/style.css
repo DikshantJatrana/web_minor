@@ -6,10 +6,126 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family: 'gilroy';
+font-family: 'myfont';
 }
 html,body {
 height:100%;
 width: 100%;
 background-color: #121212;
+color: #002958;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.card{
+    width: 35vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hidden{
+    display: none;
+}
+input{
+    height: 98%;
+    width: 55%;
+    outline: none;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    border-bottom: #121212 0.1rem black;
+    padding-top: 3.75%;
+}
+.password input{
+    width: 50%;
+}
+.box{
+    height: 12%;
+    width: 98%;
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+
+}
+.details{
+    font-size: 1rem;
+    font-weight: 600;
+    height: 98%;
+    width: 20%;
+    display: flex;
+    align-items: end;
+}
+.view{
+    height: 60%;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+.view:active{
+    scale: 0.7;
+}
+.btn{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    background-color: #002958;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+}
+.btn:hover{
+    background-color:white;
+    color:#002958;
+    border: 0.15rem solid #002958;
+}
+.success{
+    background-color: #7cb518;
+}
+.success:hover{
+    border: 0.15rem solid #7cb518;
+    background-color: white;
+    color: #7cb518;
+}
+.failed{
+    background-color: #d62828;
+}
+.failed:hover{
+    border: 0.15rem solid #d62828;
+    background-color: white;
+    color: #d62828;
+}
+.invalid{
+    background-color: #f3de2c;
+}
+.invalid:hover{
+    border: 0.15rem solid #f3de2c;
+    background-color: white;
+    color: #f3de2c;
+}
+.pop{
+    position: relative;
+    color: #121212;
+    justify-content: center;
+}
+.yes{
+    height: 30%;
+    aspect-ratio: 1;
+    position: absolute;
+    top: -15%;
+}
+
+.para{
+    margin-top:3%;
+    margin-bottom: 15%;
+    text-align: center;
 }
