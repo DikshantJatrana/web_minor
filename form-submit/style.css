@@ -46,12 +46,19 @@ input{
     width: 50%;
 }
 .box{
-    height: 12%;
+    height: 13%;
     width: 98%;
     display: flex;
-    align-items: self-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.box1{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-
 }
 .details{
     font-size: 1rem;
@@ -68,6 +75,20 @@ input{
 }
 .view:active{
     scale: 0.7;
+}
+.box span{
+    font-size: 0.6rem;
+    font-weight: 300;
+    text-align: center;
+    height: 98%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d62828;
+}
+.visiblity{
+    visibility: hidden;
 }
 .btn{
     width: 50%;
@@ -88,6 +109,17 @@ input{
     color:#002958;
     border: 0.15rem solid #002958;
 }
+.snack{
+    width: 25vw;
+    height: auto;
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
 .success{
     background-color: #7cb518;
 }
@@ -95,6 +127,55 @@ input{
     border: 0.15rem solid #7cb518;
     background-color: white;
     color: #7cb518;
+}
+.slide{
+    width: 90%;
+    height: 3rem;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
+}
+.slide span{
+    height: 50%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide span img{
+    height: 100%;
+    width: 100%;
+}
+.slide p{
+    font-size:0.6rem;
+    font-weight: 500;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+}
+.popsuccess{
+    color: #7cb518;
+}
+.popfailed{
+    color: #d62828;
+}
+.popinvalied{
+    color: #f3de2c;
+}
+.popsuccess::after{
+    width: 100%;
+    height: 1rem;
+    background-color: #7cb518;
+    animation: anime 5s linear forwards;
+}
+@keyframes anime{
+    100%{
+        width: 0;
+    }
 }
 .failed{
     background-color: #d62828;
@@ -116,14 +197,29 @@ input{
     position: relative;
     color: #121212;
     justify-content: center;
+    visibility: hidden;
+}
+.up{
+    visibility: visible;
+    animation-name: popup;
+    animation-duration: 0.2s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+}
+@keyframes popup{
+    from{
+        scale: 0;
+    }
+    to{
+        scale: 1;
+    }
 }
 .yes{
     height: 30%;
     aspect-ratio: 1;
     position: absolute;
     top: -15%;
-}
-
+} 
 .para{
     margin-top:3%;
     margin-bottom: 15%;

@@ -9,26 +9,41 @@
 </head>
 <body>
     <div id="card1" class="card">
-        <div class="name box">
-            <h3 class="details">Name</h3>
-            <input type="text">
+        <div class="box">
+            <div class="box1">
+                <h3 class="details">Name</h3>
+                <input type="text" class="name">
+            </div>
+            <span class="visiblity">Name is required</span>
         </div>
-        <div class="email box">
-            <h3 class="details">E-Mail</h3>
-            <input type="text">
+        <div class="box">
+            <div class="box1">
+                <h3 class="details">E-Mail</h3>
+                <input type="text" class="email">
+            </div>
+            <span class="visiblity">Email is required</span>
         </div>
-        <div class="age box">
-            <h3 class="details">D.O.B</h3>
-            <input type="date">
+        <div class="box">
+            <div class="box1">
+                <h3 class="details">D.O.B</h3>
+                <input type="date" class="dob">
+            </div>
+            <span class="visiblity">D.O.B is required</span>
         </div>
-        <div class="password box">
-            <h3 class="details">Password</h3>
-            <input type="password">
-            <img class="view" src="eye.png" alt="view">
+        <div class="box">
+            <div class="box1">
+                <h3 class="details">Password</h3>
+                <input type="password" class="password">
+                <img class="view" src="eye.png" alt="view">
+            </div>
+            <span class="visiblity">Password is required</span>
         </div>
-        <div class="phone box">
-            <h3 class="details">Phone-Number</h3>
-            <input type="text">
+        <div class="box">
+            <div class="box1">
+                <h3 class="details">Phone-Number</h3>
+                <input type="text" class="phone">
+            </div>
+            <span class="visiblity">Phone Number is required</span>
         </div>
         <button id="next" class="btn">Next</button>
     </div>
@@ -36,7 +51,9 @@
         <button class="btn success">SUCCESS</button>
         <button class="btn failed">FAILED</button>
         <button class="btn invalid">INVALID</button>
-        <button class="btn">SUBMIT</button>
+        <button id="submit" class="btn">SUBMIT</button>
+        <div class="snack">    
+        </div>
     </div>
     <div id="card3" class="card pop hidden">
         <img class="yes" src="yes.png" alt="check">
